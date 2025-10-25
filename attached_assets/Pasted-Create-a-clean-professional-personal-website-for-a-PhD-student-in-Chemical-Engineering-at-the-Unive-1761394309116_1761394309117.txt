@@ -1,0 +1,58 @@
+Create a clean, professional personal website for a PhD student in Chemical Engineering at the University of Michigan. 
+The website should have a minimalist academic design with a blue and white color palette and responsive layout. 
+Use readable typography suitable for research/academic pages.
+
+Sections to include:
+1. **Header / Hero Section**
+   - University of Michigan logo on top left.
+   - A placeholder for profile photo on the right.
+   - Name: [Your Sister’s Name]
+   - Title: "PhD Candidate, Chemical Engineering, University of Michigan"
+   - A background banner image (placeholder for now).
+
+2. **Education Section**
+   - University of Michigan (PhD, Chemical Engineering, Aug 2021 – Jul 2026)
+     Skills: Molecular assay (western blot, dPCR, qPCR), Molecular Imaging (IF, SEM), AutoCAD, Adobe Illustrator
+   - Indian Institute of Technology, Kharagpur (MTech and BTech Dual, Chemical Engineering, 2016 – 2021)
+     Grade: 9.63/10
+     Activities:
+       1. General Secretary, Social and Cultural (SoCult), SN Hall of Residence
+       2. Vice President, Chemical Engineering Association
+       3. Treasurer, Chemical Engineering Association
+       4. Fine & Arts Secretary, SN Hall of Residence
+   - Chinmaya Vidyalaya, Bokaro Steel City (Intermediate, Mathematics, 2014 – 2016)
+     Grade: 9.44/10
+
+3. **Experience Section**
+   - University of Waterloo, Summer Internship (May 2020 – Aug 2020, India)
+     “Study of Transport Phenomena using Finite Element Analysis Modeling.”
+   - Purdue University, Mechanical Engineering Department, Undergraduate Intern (May 2019 – Jul 2019, USA)
+     “Analysis of Flow and Transport Phenomena in Energy Systems.”
+
+4. **Publications Section**
+   Include three publication cards, each with:
+   - Placeholder for publication image.
+   - Title
+   - Journal and Date
+   - Short summary
+   Publications:
+   a. *Stellate Silicon Microneedles for Rapid Point-of-Care Melanoma Exosome Isolation and Detection via a Lateral Flow Assay* — Biosensors and Bioelectronics, May 16, 2025.
+     Summary: This work explores at-home melanoma detection using microneedle patches and lateral flow assay technology.
+   b. *Chiroptical detection and mutation analysis of cancer-associated extracellular vesicles using microfluidics with oriented chiral nanoparticles* — Matter, Dec 4, 2024.
+     Summary: This study uses chiral nanoparticles to identify mutations in cancer exosomes through enhanced chiral signals.
+   c. *Porous PDMS-Based Microsystem (ExoSponge) for Rapid Cost-Effective Tumor Extracellular Vesicle Isolation and Mass Spectrometry-Based Metabolic Biomarker Screening* — Advanced Materials Technologies, Jan 29, 2023.
+     Summary: A simple PDMS-based microsystem for high-throughput isolation of tumor-derived exosomes.
+
+5. **Contact / Footer Section**
+   - Add social icons and links:
+     - LinkedIn: [placeholder for now]
+     - Email: [placeholder]
+     - University of Michigan homepage: [placeholder link]
+   - Footer note: “© 2025 [Your Sister’s Name] | PhD Candidate, University of Michigan”
+
+Make sure the design:
+- Is mobile responsive.
+- Uses semantic HTML5 (sections, articles, etc).
+- Includes placeholder images for photo, banner, and publication covers.
+- Looks elegant, similar to an academic researcher’s portfolio.
+- Generates full downloadable source code (HTML, CSS, JS).
