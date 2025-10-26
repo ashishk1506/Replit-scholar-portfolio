@@ -15,10 +15,11 @@ interface EducationItem {
 export default function EducationSection() {
   const education: EducationItem[] = [
     {
-      institution: "University of Michigan",
+      institution: "University of Michigan, Ann Arbor",
       degree: "PhD",
       field: "Chemical Engineering",
-      duration: "Aug 2021 – Jul 2026",
+      duration: "2021 – Present",
+      grade: "4.0/4.0",
       skills: [
         "Western Blot",
         "dPCR",
@@ -31,7 +32,7 @@ export default function EducationSection() {
     },
     {
       institution: "Indian Institute of Technology, Kharagpur",
-      degree: "MTech and BTech Dual Degree",
+      degree: "M.Tech + B.Tech (Hons.)",
       field: "Chemical Engineering",
       duration: "2016 – 2021",
       grade: "9.63/10",
@@ -101,7 +102,7 @@ export default function EducationSection() {
                         className="text-sm font-medium text-foreground"
                         data-testid={`text-grade-${index}`}
                       >
-                        Grade: {edu.grade}
+                        GPA: {edu.grade}
                       </span>
                     </div>
                   )}

@@ -1,0 +1,62 @@
+You have already generated a personal academic website for my sister in the first version.
+Now, I want to update and enhance the existing website by adding missing academic details, research experience, publications, and achievements.
+
+Goal: Keep the overall structure, design, and layout consistent, but enrich the site’s content with more details and professional polish.
+
+Update Instructions:
+
+Keep the Home / About section concise but mention her research focus: cancer biomarker isolation, microfluidic device design, and characterization of extracellular vesicles.
+
+Expand the Education section to include:
+
+Ph.D. in Chemical Engineering | University of Michigan Ann Arbor | GPA: 4.0/4.0 | 2021–Present
+
+M.Tech + B.Tech (Hons.) in Chemical Engineering | IIT Kharagpur | GPA: 9.63/10 | 2016–2021
+
+Add a Professional Experience section with project summaries:
+
+Longitudinal profiling of glioblastoma EVs (Prof. Sunitha Nagrath & Dr. Adam Sonabend, Northwestern University) — includes optimization of microfluidic device and a pending patent.
+
+Selective microfluidic capture of meningioma EVs (Prof. Sunitha Nagrath & Dr. Mark Youngblood) — includes RNA extraction, dPCR, and western blot workflows.
+
+Study of neutrophil–glioblastoma EV interactions (Prof. Sunitha & Deepak Nagrath) — involves in-vitro and ex-vivo characterization of neutrophil response.
+
+Add a Publications section with formatted citations (use bullet points or cards):
+
+Nature Communications (2025), Advanced Materials Technologies (2025), Biosensors and Bioelectronics (2025), Matter (2024), Advanced Materials Technologies (2023).
+
+Add a Patents section with this entry:
+
+Provisional Patent US App. No. 63/754225 (2025): A Novel Immuno-affinity Based Microfluidic Device (MGM ExoChip) for Specific Capture of Extracellular Vesicles from Plasma of Meningioma Patients.
+
+Add an Awards & Achievements section with items such as Presentation Awards (2023–2025), IIT Kharagpur Rank 1, Mitacs Globalink Internship, and S.N. Bose Scholarship.
+
+Add Teaching & Mentoring section:
+
+Graduate Student Instructor, ChE 460 (Fall 2024), Peer Mentor (2022–2023), Teaching Assistant, IIT Kharagpur (2020).
+
+Add Outreach & Extracurriculars:
+
+Roles at BIONIC (Biointerfaces Institute), F.E.M.M.E.S., Symposium Officer, Outreach Officer, and President of Chemical Engineering Association (IIT KGP).
+
+Add Skills section in a clean multi-column layout:
+
+Experimental (SEM, Western Blot, qPCR/dPCR, NTA, Cell Culture),
+
+Equipment (Helios 650, Ultracentrifuge, ZE5 Analyzer, Rheometer, etc.),
+
+Software (R, COMSOL, ANSYS Fluent, Aspen Plus, MATLAB, SolidWorks, GraphPad Prism).
+
+Add Internship Experience:
+
+Finite Element Analysis of Cells, University of Waterloo (2020).
+
+Metal Anode Deposition Modeling, Purdue University (2019).
+
+Ensure consistent formatting, responsive layout, and simple navigation between sections.
+
+Update the color scheme to a professional academic palette (white base, blue/gray accent).
+
+Preserve all previous design and structure — only extend or enhance; do not remove existing sections unless redundant.
+
+After generating changes, output the updated source code (HTML/CSS/JS or React) ready for deployment as a ZIP.

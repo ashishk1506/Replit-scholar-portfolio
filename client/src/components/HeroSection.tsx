@@ -44,11 +44,12 @@ export default function HeroSection() {
               PhD Candidate, Chemical Engineering
             </p>
             <p className="text-lg text-white/80" data-testid="text-institution">
-              University of Michigan
+              University of Michigan, Ann Arbor
             </p>
             <p className="text-base text-white/70 leading-relaxed max-w-xl">
-              Advancing biomedical diagnostics through innovative microneedle technology
-              and extracellular vesicle isolation systems for early cancer detection.
+              Pioneering cancer biomarker isolation through innovative microfluidic 
+              device design and advanced characterization of extracellular vesicles 
+              for early detection and personalized treatment.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button
