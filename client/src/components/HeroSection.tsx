@@ -56,7 +56,7 @@ export default function HeroSection() {
                 variant="outline"
                 size="lg"
                 onClick={() => scrollToSection("publications")}
-                className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20"
+                className="bg-white/10 backdrop-blur-md border-white/30 text-white"
                 data-testid="button-view-publications"
               >
                 <FileText className="w-4 h-4 mr-2" />
@@ -66,7 +66,7 @@ export default function HeroSection() {
                 variant="outline"
                 size="lg"
                 onClick={() => scrollToSection("contact")}
-                className="bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20"
+                className="bg-white/10 backdrop-blur-md border-white/30 text-white"
                 data-testid="button-contact"
               >
                 <Mail className="w-4 h-4 mr-2" />
