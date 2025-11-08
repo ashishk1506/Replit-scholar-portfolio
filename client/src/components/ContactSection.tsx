@@ -3,9 +3,29 @@ import { Mail, Linkedin, ExternalLink } from "lucide-react";
 import { SiGooglescholar, SiResearchgate } from "react-icons/si";
 
 export default function ContactSection() {
-  const handleContactClick = (platform: string) => {
-    console.log(`${platform} clicked`);
-  };
+
+    const handleContactClick = (platform: string) => {
+      switch (platform) {
+        case "Email":
+          window.location.href = "mailto:abha@umich.edu";
+          break;
+        case "LinkedIn":
+          window.open("https://www.linkedin.com/in/abha-kumari-83944a178/", "_blank", "noopener,noreferrer");
+          break;
+        case "Google Scholar":
+          window.open("https://scholar.google.com/citations?user=YOUR_USER_ID", "_blank", "noopener,noreferrer");
+          break;
+        case "ResearchGate":
+          window.open("https://www.researchgate.net/profile/Your-Profile", "_blank", "noopener,noreferrer");
+          break;
+        case "University Page":
+          window.open("https://che.engin.umich.edu/people/kumari-abha/", "_blank", "noopener,noreferrer");
+          break;
+        default:
+          console.warn(`Unknown platform: ${platform}`);
+      }
+    };
+
 
   return (
     <section id="contact" className="py-20 bg-background">

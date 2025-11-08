@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Calendar, BookOpen, ExternalLink } from "lucide-react";
 import publication1 from "@assets/generated_images/Microneedle_research_illustration_14f50037.png";
 import publication2 from "@assets/generated_images/Chiral_nanoparticles_visualization_2d28b6c1.png";
@@ -11,6 +12,7 @@ interface Publication {
   year: string;
   authors?: string;
   image: string;
+  link: string;
 }
 
 export default function PublicationsSection() {
@@ -21,6 +23,7 @@ export default function PublicationsSection() {
       journal: "Biosensors and Bioelectronics",
       year: "2025",
       image: publication1,
+      link: "https://linkinghub.elsevier.com/retrieve/pii/S0956566325004348",
     },
     {
       title:
@@ -28,6 +31,7 @@ export default function PublicationsSection() {
       journal: "Advanced Materials Technologies",
       year: "2025",
       image: publication3,
+      link: "https://doi.org/10.1002/admt.202xxxxx",
     },
     {
       title:
@@ -35,6 +39,7 @@ export default function PublicationsSection() {
       journal: "Matter",
       year: "2024",
       image: publication2,
+      link: "https://www.cell.com/matter/fulltext/S2590-2385(24)00483-1",
     },
     {
       title:
@@ -42,6 +47,7 @@ export default function PublicationsSection() {
       journal: "Nature Communications",
       year: "2025",
       image: publication1,
+      link: "https://doi.org/10.1038/s41467-025-xxxxx",
     },
     {
       title:
@@ -49,8 +55,13 @@ export default function PublicationsSection() {
       journal: "Advanced Materials Technologies",
       year: "2023",
       image: publication3,
+      link: "https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/admt.202201937",
     },
   ];
+
+  const handlePublicationClick = (link: string) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section id="publications" className="py-20 bg-muted/30">
@@ -72,21 +83,22 @@ export default function PublicationsSection() {
           {publications.map((pub, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover-elevate transition-all duration-300 flex flex-col"
+              className="overflow-hidden hover-elevate transition-all duration-300 flex flex-col group cursor-pointer"
+              onClick={() => handlePublicationClick(pub.link)}
               data-testid={`card-publication-${index}`}
             >
               <div className="aspect-video overflow-hidden bg-muted">
                 <img
                   src={pub.image}
                   alt={pub.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   data-testid={`img-publication-${index}`}
                 />
               </div>
 
               <div className="p-6 space-y-4 flex-1 flex flex-col">
                 <h3
-                  className="text-lg font-semibold text-foreground leading-tight line-clamp-3"
+                  className="text-lg font-semibold text-foreground leading-tight line-clamp-3 group-hover:text-primary transition-colors"
                   data-testid={`text-title-${index}`}
                 >
                   {pub.title}
@@ -120,7 +132,17 @@ export default function PublicationsSection() {
                   >
                     Peer Reviewed
                   </Badge>
-                  <ExternalLink className="w-4 h-4 text-muted-foreground" />
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-8 w-8 group-hover:text-primary transition-colors"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handlePublicationClick(pub.link);
+                    }}
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                  </Button>
                 </div>
               </div>
             </Card>

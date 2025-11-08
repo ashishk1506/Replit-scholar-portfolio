@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center space-y-2">
           <p className="text-sm text-muted-foreground" data-testid="text-copyright">
-            © 2025 Your Sister's Name | PhD Candidate, University of Michigan
+            © 2025 Abha Kumari | PhD Candidate, University of Michigan
           </p>
           <p className="text-xs text-muted-foreground">
             Chemical Engineering Department

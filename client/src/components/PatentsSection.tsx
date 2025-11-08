@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Lightbulb } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Lightbulb, ExternalLink } from "lucide-react";
 
 interface Patent {
   title: string;
@@ -8,6 +9,7 @@ interface Patent {
   year: string;
   status: string;
   description: string;
+  link: string;
 }
 
 export default function PatentsSection() {
@@ -20,8 +22,14 @@ export default function PatentsSection() {
       status: "Provisional Patent",
       description:
         "Innovative microfluidic platform designed for selective isolation of meningioma-derived extracellular vesicles using immunoaffinity-based capture technology.",
+      link: "https://available-inventions.umich.edu/product/meningioma-exochip"
     },
   ];
+
+  const handleInstitutionClick = (link: string) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
+
 
   return (
     <section id="patents" className="py-20 bg-background">
@@ -40,12 +48,13 @@ export default function PatentsSection() {
           {patents.map((patent, index) => (
             <Card
               key={index}
-              className="p-8 hover-elevate transition-shadow duration-300"
+              className="p-8 hover-elevate transition-shadow duration-300 group cursor-pointer"
               data-testid={`card-patent-${index}`}
+              onClick={() => handleInstitutionClick(patent.link)}
             >
               <div className="flex flex-col md:flex-row gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Lightbulb className="w-7 h-7 text-primary" />
                   </div>
                 </div>
@@ -62,9 +71,20 @@ export default function PatentsSection() {
                       <span className="text-sm text-muted-foreground">
                         ({patent.year})
                       </span>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="h-8 w-8 ml-auto group-hover:text-primary transition-colors"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleInstitutionClick(patent.link);
+                        }}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                      </Button>
                     </div>
                     <h3
-                      className="text-xl font-semibold text-foreground leading-tight"
+                      className="text-xl font-semibold text-foreground leading-tight group-hover:text-primary transition-colors"
                       data-testid={`text-patent-title-${index}`}
                     >
                       {patent.title}

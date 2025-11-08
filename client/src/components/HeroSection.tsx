@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Mail, FileText } from "lucide-react";
-import profileImage from "@assets/generated_images/PhD_student_professional_headshot_9e813628.png";
+import profileImage from "@assets/generated_images/PhD_student_professional_headshot_9e813628.jpeg";
 import bannerImage from "@assets/generated_images/University_of_Michigan_campus_banner_c92f28bb.png";
-import umLogo from "@assets/stock_images/university_of_michig_ead0d725.jpg";
+import umLogo from "@assets/stock_images/university_of_michig_ead0d725.png";
 
 export default function HeroSection() {
   const scrollToSection = (id: string) => {
@@ -35,7 +35,7 @@ export default function HeroSection() {
               className="font-serif text-5xl md:text-6xl font-bold leading-tight"
               data-testid="text-name"
             >
-              Your Sister's Name
+              Abha Kumari
             </h1>
             <p
               className="text-xl md:text-2xl font-medium text-white/90"
